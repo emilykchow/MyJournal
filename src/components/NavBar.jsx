@@ -11,12 +11,12 @@ const NavBar = () => {
   return (
     <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">ShareCal</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Profile</Nav.Link>
+          <Link to="/home" className="nav-link">Home</Link>
+          <Link to="/Profile" className="nav-link">Profile</Link>
             {/* <Nav.Link href="#home">Profile</Nav.Link> */}
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Link to="/misc" className="nav-link">misc</Link>
+            <Link to="/miscc" className="nav-link">misc</Link>
             <Logout />
           </Nav>
         </Container>
